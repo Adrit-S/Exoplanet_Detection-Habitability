@@ -14,7 +14,7 @@ class LightCurveDataset(Dataset):
 
         # Checks if file is a fits file before using
 
-        self.files = [f for f in os.listdir(directory) if f.endswith(".fits")]
+        self.files = [files for files in os.listdir(directory) if files.endswith(".fits")]
         self.max_length = max_length
 
     def __len__(self):
